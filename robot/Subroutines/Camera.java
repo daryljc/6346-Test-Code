@@ -15,7 +15,7 @@ public class Camera {
     UsbCamera Camera1;
     VideoSink CameraStream;
 
-    public void Initial(){
+    public void Initial() {
         Camera0 = CameraServer.startAutomaticCapture("Front Camera", 0);
         Camera0.setConnectionStrategy(VideoSource.ConnectionStrategy.kKeepOpen);
         //Camera1 = CameraServer.startAutomaticCapture("Rear Camera", 1);
@@ -25,7 +25,7 @@ public class Camera {
         CameraStream.setSource(Camera0);
     }
 
-    public void ToggleCamera(Boolean ControllerInput1, Boolean ControllerInput2){
+    public void ToggleCamera(Boolean ControllerInput1, Boolean ControllerInput2) {
         
         if (ControllerInput1 == true){
             CameraStream.setSource(Camera0);
@@ -34,11 +34,7 @@ public class Camera {
             CameraStream.setSource(Camera1);
         }
 
+
     }
-
-
-
-
-
 
 }

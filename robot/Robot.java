@@ -20,7 +20,7 @@ public class Robot extends TimedRobot {
   public static double kDefaultSpeed = 1.0;
 
   XboxController DriverController = new XboxController(0); //Assigns a new Xbox controller to port 0
-  XboxController ArmController = new XboxController(1); //Assigns a new Xbox controller to port 0
+  XboxController ArmController = new XboxController(1); //Assigns a new Xbox controller to port 0 (post-credit: or is it port 1 since 1 is passed?)
 
   Camera CamSub = new Camera(); //Allows us to call the Camera Subroutines in the Camera.Java class
   Driving DriveSub = new Driving(); //Allows us to call the Driving Subroutines in the Driving.Java class
@@ -41,7 +41,7 @@ public class Robot extends TimedRobot {
   private static final String A_Blue_Center = "Fast Center Score";
   private static final String A_Blue_Amp = "Blue Amp Score";
   private static final String A_Nothing = "Nothing";
-  String[] AutoNames= {A_Stationary, A_Red_Source, A_Red_Center, A_Red_Amp, A_Blue_Source, A_Blue_Center, A_Blue_Amp, A_Nothing, ""};
+  String[] AutoNames = {A_Stationary, A_Red_Source, A_Red_Center, A_Red_Amp, A_Blue_Source, A_Blue_Center, A_Blue_Amp, A_Nothing, ""};
   SendableChooser<String> Auto_Selector = new SendableChooser<>();
 
   @Override

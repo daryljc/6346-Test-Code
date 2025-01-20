@@ -5,10 +5,10 @@
 package frc.robot.Subroutines;
 
 //These libraries are neccessary for the motors to run. These are can bus motors, not pwm.
-import com.revrobotics.CANSparkMax;
+import com.revrobotics.CANSparkMax; // Affected by the REVLib 2025 release, adjust references in code accordingly, https://docs.revrobotics.com/revlib/24-to-25
 import com.revrobotics.RelativeEncoder;
 import com.revrobotics.SparkRelativeEncoder;
-import com.revrobotics.CANSparkLowLevel.MotorType;
+import com.revrobotics.CANSparkLowLevel.MotorType; // Affected by the REVLib 2025 release, adjust references in code accordingly, https://docs.revrobotics.com/revlib/24-to-25
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;

@@ -4,8 +4,8 @@
 
 package frc.robot.Subroutines;
 
-import com.revrobotics.CANSparkLowLevel.MotorType;
-import com.revrobotics.CANSparkMax;
+import com.revrobotics.CANSparkLowLevel.MotorType; // Affected by the REVLib 2025 release, rename, https://docs.revrobotics.com/revlib/24-to-25
+import com.revrobotics.CANSparkMax; // Affected by the REVLib 2025 release, rename, https://docs.revrobotics.com/revlib/24-to-25
 import com.revrobotics.RelativeEncoder;
 import com.revrobotics.SparkRelativeEncoder;
 import edu.wpi.first.wpilibj.Timer;
